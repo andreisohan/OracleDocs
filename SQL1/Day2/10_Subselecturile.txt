@@ -1,4 +1,4 @@
-select last_name||' '||first_name nume, email, salary,
+﻿select last_name||' '||first_name nume, email, salary,
        (select job_title from jobs where job_id = employees.job_id) post
         from employees
         where DEPARTMENT_ID = (select DEPARTMENT_ID
@@ -30,5 +30,6 @@ select last_name||' '||first_name nume, email, salary,
 				 WHERE DEPARTMENT_ID = 30)
 		ORDER BY SALARY DESC;
 		
+TESTESTESTES
 
 		
