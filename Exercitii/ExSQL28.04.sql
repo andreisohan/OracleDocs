@@ -113,9 +113,9 @@ values (3,'George','Alex');
 
 savepoint c;
 
-rollback b;
+rollback to b;
 
-commit
+commit;
 
 select * from employees_test;
 
